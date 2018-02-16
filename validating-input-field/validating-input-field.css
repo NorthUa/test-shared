@@ -1,0 +1,138 @@
+.validating-input-field {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  min-height: 32px;
+  line-height: 32px;
+  position: relative;
+}
+.validating-input-field .input-icon {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  z-index: 2;
+  color: #898593;
+}
+.validating-input-field .input-counter,
+.validating-input-field .textarea-counter {
+  color: #474056;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 32px;
+  position: absolute;
+  right: 9px;
+  bottom: 0;
+  z-index: 3;
+}
+.validating-input-field .input-counter.invalid,
+.validating-input-field .textarea-counter.invalid {
+  color: #e54158;
+}
+.validating-input-field .input-field,
+.validating-input-field .textarea-field {
+  background-color: transparent;
+  border: solid 1px #e1e0e5;
+  border-radius: 2px;
+  color: #474056;
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.validating-input-field .input-field:not([disabled]):focus.ng-invalid:not(.ng-pristine),
+.validating-input-field .textarea-field:not([disabled]):focus.ng-invalid:not(.ng-pristine),
+.validating-input-field .input-field:not([disabled]).ng-invalid.ng-touched,
+.validating-input-field .textarea-field:not([disabled]).ng-invalid.ng-touched {
+  background-color: #fbe5e8;
+  border: solid 1px #e54158;
+  box-shadow: none;
+  outline: none;
+}
+.validating-input-field .input-field:not([disabled]):hover,
+.validating-input-field .textarea-field:not([disabled]):hover,
+.validating-input-field .input-field:not([disabled]):focus,
+.validating-input-field .textarea-field:not([disabled]):focus {
+  outline: 0;
+  border: solid 1px #28afe4;
+}
+.validating-input-field .input-field:not([disabled]).invalid,
+.validating-input-field .textarea-field:not([disabled]).invalid {
+  background-color: #fbe5e8;
+  border: solid 1px #e54158;
+  box-shadow: none;
+}
+.validating-input-field .input-field:not([disabled]):focus.ng-valid,
+.validating-input-field .textarea-field:not([disabled]):focus.ng-valid,
+.validating-input-field .input-field:not([disabled]):focus.ng-pristine,
+.validating-input-field .textarea-field:not([disabled]):focus.ng-pristine {
+  border: solid 1px #28afe4;
+  box-shadow: none;
+  outline: none;
+}
+.validating-input-field .input-field {
+  padding: 0 10px;
+  height: 36px;
+}
+.validating-input-field .textarea-field {
+  line-height: normal;
+  min-height: 70px;
+}
+.validating-input-field .clear-button {
+  font-size: 10px;
+  position: absolute;
+  right: 6px;
+  top: 9px;
+  cursor: pointer;
+  color: white;
+  padding: 4px 5px 3px;
+  opacity: 0.64;
+  background-color: #c9c9cd;
+  border-radius: 50%;
+  line-height: initial;
+  z-index: 3;
+}
+.validating-input-field .clear-button:hover {
+  opacity: 1;
+}
+.validating-input-field .input-placeholder,
+.validating-input-field .textarea-placeholder {
+  color: rgba(71, 64, 86, 0.44);
+  left: 11px;
+  position: absolute;
+  line-height: 36px;
+  min-height: 36px;
+  z-index: 1;
+}
+.validating-input-field ::-webkit-input-placeholder {
+  color: transparent;
+  font-size: 0;
+}
+.validating-input-field :-moz-placeholder {
+  /* Firefox 18- */
+  color: transparent;
+  font-size: 0;
+}
+.validating-input-field ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: transparent;
+  font-size: 0;
+}
+.validating-input-field :-ms-input-placeholder {
+  color: transparent;
+  font-size: 0;
+}
+.validating-input-field input::-ms-clear {
+  display: none;
+}
+.validating-input-field .textarea-field {
+  overflow: hidden;
+  padding: 7px 10px 6px 10px;
+  resize: none;
+}
+.validating-input-field.with-counter .input-field {
+  padding: 0 30px 0 10px;
+}
+.validating-input-field.with-counter .textarea-field {
+  padding: 7px 30px 6px 10px;
+}
