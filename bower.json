@@ -6,12 +6,12 @@
   "main": [
     "validating-input-field/validating-input-field.component.js",
     "validating-input-field/validating-input-field.css",
-    "default-dropdown/default-dropdown.component"
+    "default-dropdown/default-dropdown.component",
     "default-dropdown/default-dropdown.css"
   ],
   "description": "Shared components for test",
   "dependencies": {
     "angular": ">=1.6.5"
   },
-  "location": "https://github.com/NorthUa/test-shared",
+  "location": "https://github.com/NorthUa/test-shared"
 }
